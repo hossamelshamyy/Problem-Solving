@@ -28,6 +28,5 @@ int main() {
     } else {
         cout << "Friendship";
     }
-
     return 0;
 }
