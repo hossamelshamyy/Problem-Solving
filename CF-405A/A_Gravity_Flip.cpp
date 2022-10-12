@@ -1,26 +1,23 @@
 #include <bits/stdc++.h>
+
 #include <iostream>
+
 using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
+    vector<int> v;
     int n;
     cin >> n;
-    int arr[n+1] = {0};
-    for (int i = 1; i <= n; i++)
-    {   
+    while(n--){
         int x;
-        cin >> x;
-
-        arr[x] = i;
+        cin>>x;
+        v.push_back(x);
     }
-
-    for (int i = 1; i <= n; i++)
-    {
-        cout << arr[i] << ' ' ;
+    sort(v.begin(),v.end());
+    for(int i : v){
+        cout << i << " ";
     }
-    
-    
     return 0;
 }

@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
+
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -7,20 +9,14 @@ int main() {
     cin.tie(NULL);
     int n;
     cin >> n;
-    int arr[n+1] = {0};
-    for (int i = 1; i <= n; i++)
-    {   
-        int x;
+    while(n--){
+        string x;
         cin >> x;
-
-        arr[x] = i;
+        if (x.size() < 11){
+            cout << x << "\n";
+        }else{
+            cout << x[0] << x.size()-2 << x[x.size()-1] << "\n";
+        }
     }
-
-    for (int i = 1; i <= n; i++)
-    {
-        cout << arr[i] << ' ' ;
-    }
-    
-    
     return 0;
 }
