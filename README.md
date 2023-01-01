@@ -1,6 +1,10 @@
 # Problem-Solving
 
-### Make priority queue of type vector and arrange based on specific element of the vector
+Solutions of some Code forces problem i solved 
+
+
+## Tips and tricks
+#### Make priority queue of type vector and arrange based on specific element of the vector
 
 ```C++
 // How to compare elements
